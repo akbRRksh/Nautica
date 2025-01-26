@@ -48,7 +48,6 @@ jobs:
       # Step 5: Deploy the Worker
       - name: 🚀 Deploy to Cloudflare
         run: |
-          cd vless
           wrangler deploy
         env:
           apiToken: ${{ secrets.CF_API_TOKEN }}
